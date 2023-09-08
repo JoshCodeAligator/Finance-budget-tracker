@@ -1,0 +1,404 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.homepage {
+  width: 150%;
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+/* Home Page Styling*/
+
+.account-info {
+  border: 3px solid black;
+  height: 175px;
+  background-color: #111;
+  color: white;
+  border-radius: 25px;
+  width: 435px;
+}
+.account-summary {
+  margin-left: -150px;
+}
+
+.account-modal {
+  width: 100%;
+  margin-left: 75%;
+  margin-top: 20%;
+}
+
+.balance {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-left: 55px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btns *{
+  color: #fff;
+  background-color: gray;
+}
+
+
+.balance {
+  font-size: 48px;
+}
+
+.budget-title h2 {
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: -2.5%;
+  font-weight: bold;
+  color: black;
+}
+
+.budget-page {
+  display: flex;
+  text-align: center;
+  margin-right: -100%;
+  margin-left: 100%;
+}
+
+.spendable-title {
+  margin-left: 60px;
+  margin-top: 7.5px;
+}
+
+
+.budget-tips {
+  margin-left: -22%;
+}
+
+.recent-transactions {
+  margin-top: 20%;
+  margin-left: 45%;
+}
+
+.transaction-modals {
+  width: 128%;
+  margin-left: 50%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: #fffffe;
+  padding: 20px;
+}
+.transaction-modal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+}
+
+.transaction-modal:last-child {
+  border-bottom: 0px;
+}
+
+/* Budget Page Styling*/
+.my-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble-icon {
+  background-color: orange;
+  border-radius: 50px;
+  height: 50%;
+  width: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.category {
+  font-size: 14px;
+  margin-top: -15px;
+  color: darkgray;
+}
+
+.cost {
+  margin-top: 17.5px;
+}
+
+.payment-source {
+  margin-top: 10px;
+}
+
+.transaction-detail {
+  text-align: center;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  width: 175%;
+  margin-left: 15%;
+}
+.see-all {
+  color: blue;
+}
+
+/* Budgeting Tips*/
+h1{
+  text-align:center;
+  margin-bottom:50px;
+  margin-top:50px;
+}
+
+.blog-card-blog {
+    margin-top: 30px;
+}
+.blog-card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.blog-card .blog-card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.blog-card .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+.blog-card .blog-table {
+    padding: 15px 30px;
+}
+.blog-table {
+    margin-bottom: 0px;
+}
+.blog-category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+.blog-text-success {
+    color: #28a745!important;
+}
+.blog-card-blog .blog-card-caption {
+    margin-top: 5px;
+}
+.blog-card-caption {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.blog-card-caption, .blog-card-caption a {
+    color: #333;
+    text-decoration: none;
+}
+
+p {
+    color: #3C4857;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.budget-articles {
+  margin-left: 50px;
+}
+.blog-card .ftr {
+    margin-top: 15px;
+}
+.blog-card .ftr .author {
+    color: #888;
+}
+
+.blog-card .ftr div {
+    display: inline-block;
+}
+.blog-card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.blog-card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+.blog-card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*Spending Styling Page*/
+
+.report-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-content {
+  border: 1px solid black;
+  margin-left: 75%;
+  margin-top: 10%;
+  padding: 25px;
+  width: 100%;
+}
+
+.monthly-reports a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.monthly-reports a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.report {
+  width: 500px;
+}
+
+.categories {
+  width: 375px;
+  margin: auto;
+}
+
+.switch-view {
+  color: darkblue;
+  cursor: pointer;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 900px){
+  .budget-page {
+    margin-left: 17.5px;
+    width: 500px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .main-content {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage {
+    margin-left: -150px;
+  }
+  .transaction-modals {
+    width: 450px;
+  }
+}
