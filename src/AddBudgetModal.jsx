@@ -2,6 +2,7 @@ import { Form, Modal, Button } from "react-bootstrap"
 import { useRef } from "react"
 import { useBudgets } from "./BudgetsContext.jsx"
 
+// eslint-disable-next-line react/prop-types
 export default function AddBudgetModal({ show, handleClose }) {
   const nameRef = useRef()
   const maxRef = useRef()

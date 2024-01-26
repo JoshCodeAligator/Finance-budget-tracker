@@ -14,6 +14,7 @@ import {
 const returned_items = JSON.parse(localStorage.getItem('budgets'));
 const data_keys = returned_items.map((e) => e.name)
 data_keys.push('Uncategorized')
+// eslint-disable-next-line no-unused-vars
 let total_payment = 0;
 const ids_names_count = returned_items.map((e) => [e.id, e.name, e.total = 0])
 ids_names_count.push(['Uncategorized', 'Uncategorized', 0])

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 import { UilUsdCircle, UilFilesLandscapes, UilPizzaSlice, UilPlaneDeparture, UilCar, UilTransaction} from '@iconscout/react-unicons'
-import { json, local } from "d3";
 
 if(JSON.parse(localStorage.getItem('budgets')) == null) {
     localStorage.setItem('budgets', JSON.stringify([]))

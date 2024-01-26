@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext} from "react"
 import { v4 as uuidV4 } from "uuid"
 import useLocalStorage from "./useLocalStorage.jsx"
 
@@ -11,6 +11,7 @@ export function useBudgets() {
   return useContext(BudgetsContext)
 }
 
+// eslint-disable-next-line react/prop-types
 export const BudgetsProvider = ({ children }) => {
   const [budgets, setBudgets] = useLocalStorage("budgets", [])
   const [expenses, setExpenses] = useLocalStorage("expenses", [])

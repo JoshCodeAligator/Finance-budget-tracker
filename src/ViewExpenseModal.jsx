@@ -2,6 +2,7 @@ import { Modal, Button, Stack } from "react-bootstrap"
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./BudgetsContext"
 import { currencyFormatter } from "./utils"
 
+// eslint-disable-next-line react/prop-types
 export default function ViewExpensesModal({ budgetId, handleClose }) {
   const { getBudgetExpenses, budgets, deleteBudget, deleteExpense } =
     useBudgets()
